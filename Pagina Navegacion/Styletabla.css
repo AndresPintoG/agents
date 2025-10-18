@@ -1,0 +1,143 @@
+*{
+    margin: 5px;
+    padding: 0;
+}
+html{
+    -webkit-locale: "es";
+}
+body{
+    background-image: url(imagen/banner5.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100% ;
+    background-position: center;
+}
+.container{
+    width: 100%;
+    height: 10vh;
+    background-image: linear-gradient(rgba(3, 10, 3, 0.062), rgba(112, 191, 211, 0.959)), url(imagen/barranav.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: 100% 100%;
+    background-repeat: no-repeat;
+}
+.nave{
+    width: 50%;
+    padding: 45px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nave ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.nave ul li a{
+    text-decoration: none;
+    color:white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.2 ren;
+    font-size: 25px;
+}
+.nave ul li::before{
+    content: "";
+    height: 3px;
+    width: 0%;
+    background: red;
+    position: absolute;
+    left: 0;
+    bottom: -12px;
+    transition: 0.4 ease-out;
+}
+.nave ul li:hover::before{
+    width: 100%;
+}
+h1{
+    text-align: center;
+    color: white;
+}
+h4{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 100%;
+    color:white;
+}
+table{
+    border: 1px solid black;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-inline: 100px;  
+}
+th, td{
+   background: linear-gradient(150deg, #5DADE2, #707B7C);
+   height: 5vh;
+}
+.contacto p{
+    font-size: 1.4rem;
+    color: #4f4f4f;
+    margin: 2rem 0 0 0;
+  }
+  legend{
+    font-size: 2rem;
+    color: #4f4f4f;
+  }
+  label{
+    font-weight: 700;
+    text-transform: uppercase;
+    display: block;
+  }
+  input:not([type="submit"]),
+  textarea,
+  select{
+    padding: 1rem;
+    display: block;
+    width: 100%;
+    background-color: #e1e1e1;
+    margin-bottom: 2rem;
+    border: none;
+    border-radius: 1rem;
+  }
+  input[type="radio"]{
+    width: auto;
+    margin: 0;
+  }
+  select{
+    -webkit-appearance: none;
+    appearance: none;
+  }
+  .forma-contacto{
+    max-width: 30rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .site-header{
+    background-color: #333333;
+    padding: 1rem 0 3rem 0;
+  }
+  .site-header.inicio{
+    background-image: url(../img/header.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    min-height: 60rem;
+  }
+  .contenido-header{
+    height: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+  }
+ 
+    .contenido-header{
+      text-align: left;
+    }
+  .contenido-header h1{
+    color: #fff;
+    padding-bottom: 2rem;
+    max-width: 60rem;
+    line-height: 2;
+  }
